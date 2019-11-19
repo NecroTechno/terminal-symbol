@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Aileron;
+    src: url("./fonts/Aileron-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aileron;
+    src: url("./fonts/Aileron-Italic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Aileron;
+    font-weight: bold;
+    src: url("./fonts/Aileron-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Aileron;
+    font-weight: bold;
+    src: url("./fonts/Aileron-BoldItalic.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Aileron;
+    font-weight: 900;
+    src: url("./fonts/Aileron-Black.otf") format("opentype");
+}
+
+html, #main {
+  height: 100%;
+}
+
+body {
+	font-family: Aileron, Helvetica, Arial;
+  margin: 2vmax;
+  height: calc(100% - 4vmax);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+a, a:not([href]):not([tabindex]) {
+  color: #ef5c73;
+}
+
+a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):active {
+  color: #bc4759;
+  text-decoration:  underline;
+}
+
+.center {
+  text-align: center;
+}
+
+.panel--cont {
+  margin-left: 40px;
+  position: relative;
+  width: 400px;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+.panel--label {
+  position: absolute;
+  left: -30px;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+  padding-right: 20px;
+  border-right: 8px solid;
+}
+
+.zine-list {
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.zine-list .titleCont {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  text-align: center;
+}
+
+.zine-container {
+  width: 100%;
+  height: 100%;
+}
+
+.zine-nav {
+  z-index: 2;
+  position: absolute;
+  bottom: 3vmax;
+  font-weight: bold;
+  font-size: 3em;
+  font-style: italic;
+  background: white;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.zine-nav--back {
+  top: 3vmax;
+  bottom: auto;
+  left: 3vmax;
+}
+
+.zine-nav--prev, .zine-nav--reminder {
+  left: 3vmax;
+}
+
+.zine-nav--next {
+  right: 3vmax;
+}
+
+@media (max-width: 768px) {
+  .panel--cont {
+    width: 100%;
+    margin: unset;
+  }
+  .panel--label {
+    position: relative;
+    transform: none;
+    left: 0;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .zine-nav {
+    font-size: 1.4em;
+  }
+}
