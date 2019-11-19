@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './components/home';
-import ZineCont from './components/zineCont'
+import ZineCont from './components/zineCont';
+import NotFound from './components/notFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css'
 import {Provider} from "react-redux";
@@ -18,9 +19,7 @@ ReactDOM.render(
         <Route path="/zines/issue-0">
           <ZineCont issue="0" />
         </Route>
-        <Route path="/zines/issue-1">
-          <ZineCont issue="1" />
-        </Route>
+		<Route component={NotFound} />
       </Switch>
     </Router>
 </Provider>, document.getElementById('main')
