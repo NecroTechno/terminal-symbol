@@ -5,11 +5,11 @@ import * as Issue0 from './issue-0/chapters';
 import platform from 'platform';
 import Swipe from 'react-easy-swipe';
 
-function getConfig(issue) {
-  switch(issue) {
+function getConfig(props) {
+  switch(props.issue) {
     case "0":
       return {
-        pages: [<Issue0.P0 />, <Issue0.P1 />]
+        pages: [<Issue0.P0 issue={props.issue} title={props.title} />, <Issue0.P1 />]
       }
     default:
     return {
@@ -21,7 +21,7 @@ function getConfig(issue) {
 export default class ZineCont extends Component {
   constructor(props) {
     super(props);
-    this.zineConfig = getConfig(this.props.issue);
+    this.zineConfig = getConfig(this.props);
     this.isMobile = platform.os.family.includes("iOS") || platform.os.family.includes("Android") ? true : false;
     this.swipeReminderRef = React.createRef();
 
@@ -49,7 +49,7 @@ export default class ZineCont extends Component {
   swipeReminder() {
     setTimeout(() => {this.swipeReminderRef.current.style.display = "none"}, 3000)
     return(
-      <span ref={this.swipeReminderRef} className="zine-nav zine-nav--reminder">Swipe To View Next Page</span>
+      <span ref={this.swipeReminderRef} className="zine-nav zine-nav--reminder">Swipe To Navigate Pages</span>
     )
   }
 

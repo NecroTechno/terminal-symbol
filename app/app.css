@@ -52,6 +52,18 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   text-align: center;
 }
 
+.absCenter--cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.home-title span {
+  text-transform: lowercase;
+  font-size: 1.3rem;
+}
+
 .panel--cont {
   margin-left: 40px;
   position: relative;
@@ -59,8 +71,11 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   height: 100%;
   display: inline-block;
   float: left;
-  text-align: center;
   padding: 0 10px;
+}
+
+.panel--cont a {
+  text-align: center;
 }
 
 .panel--label {
@@ -100,11 +115,16 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   position: absolute;
   bottom: 3vmax;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   font-style: italic;
   background: white;
   padding: 4px 10px;
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.zine-nav:hover {
+  opacity: 1;
 }
 
 .zine-nav--back {
@@ -121,6 +141,32 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   right: 3vmax;
 }
 
+.zine-content--title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  background: white;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.zine-content--tocCont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.zine-content--tocCont ol {
+  padding-inline-start: 1.3em;
+}
+
+.zine-content--tocCont li {
+  font-size: 1.3em;
+}
+
 @media (max-width: 768px) {
   .panel--cont {
     width: 100%;
@@ -132,12 +178,13 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
     left: 0;
     margin-bottom: 20px;
     display: block;
-	border-left: 8px solid;
-	border-right: none;
-	padding-right: 0px;
-	padding-right: 8px;
+  	border-left: 8px solid;
+  	border-right: none;
+  	padding-right: 8px;
+    padding-left: 10px;
   }
   .zine-nav {
     font-size: 1.4em;
+    opacity: 1;
   }
 }
