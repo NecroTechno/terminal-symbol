@@ -1,3 +1,9 @@
+#### 0.0.3 (2019-11-20)
+
+##### New Features
+
+* **app:**  new title, better styling, todos ([71b08a51](https://glitch.com/edit/#!/starter-react/commit/71b08a5154ed35390adc93d5544ffbdebe81c777))
+
 #### 0.0.2 (2019-11-20)
 
 ##### New Features
