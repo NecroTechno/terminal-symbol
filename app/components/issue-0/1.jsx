@@ -7,6 +7,7 @@ export default class I0P1 extends Component {
       width: "100%",
       height: "100%"
     }
+	// TODO: Release notes?
       return (
         <div style={pageStyle}>
           <div className="zine-content--tocCont">

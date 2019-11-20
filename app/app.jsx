@@ -9,7 +9,7 @@ import {Provider} from "react-redux";
 import {store} from "./store/index";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-let zineIssues = ['New Beginnings'];
+let zineIssues = ['Deterministic Context-Free Language'];
 
 ReactDOM.render(
   <Provider store={store}>

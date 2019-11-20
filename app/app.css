@@ -48,6 +48,10 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   text-decoration:  underline;
 }
 
+blockquote {
+	font-size: 2em;
+}
+
 .center {
   text-align: center;
 }
@@ -57,11 +61,12 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 75%;
 }
 
 .home-title span {
   text-transform: lowercase;
-  font-size: 1.3rem;
+  font-size: 0.6em;
 }
 
 .panel--cont {
@@ -160,14 +165,17 @@ a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabin
 }
 
 .zine-content--tocCont ol {
-  padding-inline-start: 1.3em;
+  padding-inline-start: 1.4em;
 }
 
 .zine-content--tocCont li {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 @media (max-width: 768px) {
+	blockquote {
+		font-size: 1.4em;
+	}
   .panel--cont {
     width: 100%;
     margin: unset;
