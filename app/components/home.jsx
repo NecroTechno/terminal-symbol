@@ -9,7 +9,7 @@ export default class Home extends Component {
   render() {
       return (
         <>
-          <h1 className="home-title">Cryptomnesia <span>v{version}</span></h1>
+          <h1 className="home-title">Zine <span>v{version}</span></h1>
             <Panel label="Issues">
               {this.props.zineIssues.map((item,i) => <Link key={item} to={"/zines/issue-" + i}><ZineListItem issueNum={i} title={item} /></Link>)}
             </Panel>
