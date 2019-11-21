@@ -75,7 +75,8 @@ blockquote {
   width: 400px;
   height: 100%;
   display: inline-block;
-  float: left;
+  padding: 0 10px;
+  vertical-align: top;
   padding: 0 10px;
 }
 
@@ -99,6 +100,7 @@ blockquote {
   max-width: 100%;
   display: inline-block;
   margin-bottom: 30px;
+  padding: 10px;
 }
 
 .zine-list .titleCont {
@@ -107,6 +109,14 @@ blockquote {
   transform: translateY(-50%);
   display: inline-block;
   text-align: center;
+}
+
+.commit-cont {
+  margin-bottom: 1rem;
+}
+
+.commit-cont p {
+  margin: 0;
 }
 
 .zine-container {

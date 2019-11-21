@@ -1,0 +1,65 @@
+[{
+  "commit": "0060b57",
+  "date": "Thu Nov 21 10:50:55 2019 +0000",
+  "message": "other-rename"
+},
+{
+  "commit": "a98f991",
+  "date": "Wed Nov 20 23:33:28 2019 +0000",
+  "message": "0.0.3"
+},
+{
+  "commit": "51b4965",
+  "date": "Wed Nov 20 23:33:13 2019 +0000",
+  "message": "update-changelog"
+},
+{
+  "commit": "71b08a5",
+  "date": "Wed Nov 20 23:32:41 2019 +0000",
+  "message": "feat-app-new-title-better-styling-todos"
+},
+{
+  "commit": "759c6d4",
+  "date": "Wed Nov 20 21:19:32 2019 +0000",
+  "message": "0.0.2"
+},
+{
+  "commit": "b291720",
+  "date": "Wed Nov 20 21:18:35 2019 +0000",
+  "message": "update-changelog"
+},
+{
+  "commit": "09ef17a",
+  "date": "Wed Nov 20 21:12:34 2019 +0000",
+  "message": "feat-issue-change-cover-image-to-img-tag"
+},
+{
+  "commit": "efde955",
+  "date": "Wed Nov 20 16:06:45 2019 +0000",
+  "message": "home-and-zine-improvement"
+},
+{
+  "commit": "92db3f9",
+  "date": "Tue Nov 19 23:00:33 2019 +0000",
+  "message": "home-and-404-dev"
+},
+{
+  "commit": "89fae3a",
+  "date": "Tue Nov 19 17:25:12 2019 +0000",
+  "message": "Update-README.md"
+},
+{
+  "commit": "0311d37",
+  "date": "Tue Nov 19 17:24:38 2019 +0000",
+  "message": "Revert-first-commit"
+},
+{
+  "commit": "6061a89",
+  "date": "Tue Nov 19 17:24:15 2019 +0000",
+  "message": "first-commit"
+},
+{
+  "commit": "c1b944c",
+  "date": "Tue Nov 19 17:23:18 2019 +0000",
+  "message": "first-commit"
+}]

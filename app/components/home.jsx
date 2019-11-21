@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import {Link} from "react-router-dom";
 import ZineListItem from './zineList';
 import Panel from './panel';
+import CommitRender from './commitRender'
 import {version} from '../../package.json';
+import * as commitLog from '../log/commit.json'
 
 export default class Home extends Component {
   render() {
@@ -15,6 +17,9 @@ export default class Home extends Component {
             </Panel>
 			      <Panel label="About">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in diam nisi. Nullam consequat tortor arcu, in finibus neque tincidunt at. Nulla commodo nec leo nec maximus. Donec eu elementum diam. Morbi sollicitudin sapien luctus commodo malesuada. Praesent sem ex, accumsan at elit quis, vulputate venenatis sem. Vivamus sit amet fringilla est.</p>
+            </Panel>
+            <Panel label="Latest Commits">
+              <CommitRender commitLog={commitLog} />
             </Panel>
             <Panel label="Credits">
               <p>Source available <a href="https://github.com/NecroTechno/zines" target="_blank">here</a>.</p>
