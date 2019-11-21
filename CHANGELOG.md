@@ -1,3 +1,9 @@
+#### 0.0.5 (2019-11-21)
+
+##### Continuous Integration
+
+*  update image ([11af029b](https://glitch.com/edit/#!/starter-react/commit/11af029bc1cdac09108b0e0fcbe4a92044452d93))
+
 #### 0.0.4 (2019-11-21)
 
 ##### Chores
