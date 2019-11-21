@@ -1,2 +1,2 @@
-Zines
+Terminal Symbol
 ===========================
