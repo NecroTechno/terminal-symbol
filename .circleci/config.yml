@@ -52,8 +52,7 @@ jobs:
 
   deploy-job:
     docker:
-      # specify the version you desire here
-      - image: cibuilds/aws:1.16.1
+      - image: circleci/node:12.3-stretch
 
     steps:
       - checkout
