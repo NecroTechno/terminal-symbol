@@ -24,7 +24,7 @@ export default class Home extends Component {
             <Panel label="Credits">
               <p>Source available <a href="https://github.com/NecroTechno/zines" target="_blank">here</a>.</p>
       			  <p>Developed by <a href="https://necro.tech/" target="_blank">Eden</a>.</p>
-      			  <p>Thanks to <a href="https://www.instagram.com/vannahgalaxy/" target="_blank">Vannah Galaxy</a> for the support.</p>
+      			  <p>Thank you to <a href="https://www.instagram.com/vannahgalaxy/" target="_blank">Vannah Galaxy</a> for the support.</p>
       			  <p>Thank you to Sora Sagano of <a href="https://dotcolon.net/" target="_blank">dotcolon</a> for the Aileron font.</p>
             </Panel>
         </>
