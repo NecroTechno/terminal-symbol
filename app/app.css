@@ -40,11 +40,11 @@ h1, h2, h3, h4, h5 {
 }
 
 a, a:not([href]):not([tabindex]) {
-  color: #ef5c73;
+  color: #db0a5b;
 }
 
 a:hover, a:active, a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):active {
-  color: #bc4759;
+  color: #db0a5b;
   text-decoration:  underline;
 }
 
