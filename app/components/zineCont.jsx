@@ -32,6 +32,7 @@ export default class ZineCont extends Component {
     this.nextPage = this.nextPage.bind(this);
     this.prevPage = this.prevPage.bind(this);
     this.swipeReminder = this.swipeReminder.bind(this);
+    this.navRender = this.navRender.bind(this);
   }
 
   nextPage() {
@@ -53,6 +54,15 @@ export default class ZineCont extends Component {
     )
   }
 
+  navRender() {
+    return  <>
+              { this.state.currentPage === this.zineConfig.pages.length - 1 ?
+              null : <a className="zine-nav zine-nav--next" onClick={this.nextPage}>Next</a> }
+              { this.state.currentPage === 0 ?
+              null : <a className="zine-nav zine-nav--prev" onClick={this.prevPage}>Prev</a> }
+            </>
+  }
+
   render() {
 	  // TODO: Hide nav when prev/next isn't available
       return (
@@ -63,10 +73,7 @@ export default class ZineCont extends Component {
           <a className="zine-nav zine-nav--back" href="/">Home</a>
           {this.isMobile ?
             this.swipeReminder() :
-            <>
-             <a className="zine-nav zine-nav--next" onClick={this.nextPage}>Next</a>
-             <a className="zine-nav zine-nav--prev" onClick={this.prevPage}>Prev</a>
-            </>
+            this.navRender()
           }
 
           {this.zineConfig.pages[this.state.currentPage]}
