@@ -68,6 +68,8 @@ jobs:
 
       - run: cp app/index.html public/
 
+      - run: cp app/.htaccess public/
+
       - run:
           name: Deploy to S3 if tests pass
           command: rsync -va --delete ./public/ circleci@necro.tech:/var/www/ts.necro.tech/public_html
