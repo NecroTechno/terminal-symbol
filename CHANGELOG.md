@@ -1,3 +1,9 @@
+#### 0.0.8 (2020-06-15)
+
+##### New Features
+
+* **server:**  add .htaccess ([c601bce1](https://github.com/NecroTechno/terminal-symbols/commit/c601bce14f9cc78234a0ca30949acf4782e889ce))
+
 #### 0.0.7 (2020-06-15)
 
 ##### New Features
