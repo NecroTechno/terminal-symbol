@@ -9,7 +9,7 @@ function getConfig(props) {
   switch(props.issue) {
     case "0":
       return {
-        pages: [<Issue0.P0 issue={props.issue} title={props.title} />, <Issue0.P1 />, <Issue0.P2 />]
+        pages: [<Issue0.P0 issue={props.issue} title={props.title} />, <Issue0.P1 />, <Issue0.P2 />, <Issue0.P3 />]
       }
     default:
     return {
@@ -64,20 +64,16 @@ export default class ZineCont extends Component {
   }
 
   render() {
-	  // TODO: Hide nav when prev/next isn't available
-      return (
-        <Swipe
-        className="zine-container"
-        onSwipeLeft={this.nextPage}
-        onSwipeRight={this.prevPage}>
-          <a className="zine-nav zine-nav--back" href="/">Home</a>
-          {this.isMobile ?
-            this.swipeReminder() :
-            this.navRender()
-          }
-
-          {this.zineConfig.pages[this.state.currentPage]}
-        </Swipe>
-      );
+     return (
+       <Swipe
+       className="zine-container"
+       onSwipeLeft={this.nextPage}
+       onSwipeRight={this.prevPage}
+	     tolerance={75}>
+         <a className="zine-nav zine-nav--back" href="/">Home</a>
+         {this.navRender()}
+         {this.zineConfig.pages[this.state.currentPage]}
+       </Swipe>
+     );
   }
 }

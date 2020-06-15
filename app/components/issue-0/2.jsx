@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class I0P1 extends Component {
+export default class I0P2 extends Component {
   render() {
     let pageStyle = {
       width: "100%",
