@@ -1,3 +1,13 @@
+#### 0.0.7 (2020-06-15)
+
+##### New Features
+
+* **container:**  layout and config update ([f3359c9b](https://github.com/NecroTechno/terminal-symbols/commit/f3359c9bc2eb828909f0b383806415189064c6df))
+
+##### Bug Fixes
+
+* **home:**  update repo link ([f04da15f](https://github.com/NecroTechno/terminal-symbols/commit/f04da15f2e3f6e67684868192b3840f94ad69a24))
+
 #### 0.0.6 (2019-11-24)
 
 ##### Chores
